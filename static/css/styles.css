@@ -3,3 +3,11 @@ html{
     background-color: #D7D9CE;
     
 }
+
+body{
+    background-color: darkseagreen;
+    padding: 20px;
+    width: 920px;
+    margin: 0 auto;
+}
+
