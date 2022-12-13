@@ -1,11 +1,11 @@
 html{
     font-family: 'Courier New', Courier, monospace;
-    background-color: #D7D9CE;
+    background-color: #f4e9cd;
     
 }
 
 body{
-    background-color: darkseagreen;
+    background-color: #9dbebb;
     padding: 20px;
     width: 920px;
     margin: 0 auto;
@@ -13,14 +13,14 @@ body{
 
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: #333;
+    background-color: #031926;
     overflow: hidden;
   }
   
   /* Style the links inside the navigation bar */
   .topnav a {
     float: left;
-    color: #f2f2f2;
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -35,6 +35,6 @@ body{
   
   /* Add a color to the active/current link */
   .topnav a.active {
-    background-color: #04AA6D;
+    background-color: #468189;
     color: white;
   }
