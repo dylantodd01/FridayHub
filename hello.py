@@ -54,5 +54,8 @@ def calculator_page():
 def steps_page():
     return render_template('Steps-to-Follow.html')
 
-if __name__=='__main__':
-    app.run()
+app = Flask(__name__)
+
+@app.route("/")
+def hello_world():
+    return "<p>Hello, World!</p>"
