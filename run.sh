@@ -1,9 +1,8 @@
 #!/bin/bash
 
-pip install virtualenv
 python3 -m venv venv
 source venv/bin/activate
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 
 #branch_name=$(git symbolic-ref -q HEAD)
 #branch_name=${branch_name##refs/heads/}
