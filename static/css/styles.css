@@ -38,3 +38,22 @@ body{
     background-color: #468189;
     color: white;
   }
+
+  done{
+    color: green;
+    text-decoration: line-through;
+  }
+
+  inprogress{
+    color: orangered;
+  }
+  footer {
+    height: 100px;
+    background: #eee;
+  }
+
+  simulationForm{
+    background-color: #ddd;
+    font-weight: 200;
+    font-style: normal;
+  }
