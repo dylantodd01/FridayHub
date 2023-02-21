@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css' ) }}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
+        
+        <head>
+        <meta charset="UTF-8" />
+        <title>Steps to Follow</title> 
+        </head>
+    
+        <div class="topnav">
+            <a href="home">Home</a>
+            <a class="active" href="about">About</a>
+            <a href="calculator">Calculator</a>
+            <a href="Steps-to-Follow">Steps to Follow</a>
+        </div>
+        
+<h2> Steps to Follow </h2>
+<h4> The steps that we need to take to complete the app!</h4>
+
+   <li><done>1) Set up the development environment: To start, install Python, Oracle database and Django framework, and set up
+    the required dependencies.</done></li>
+    <li><done>2) Design the web app interface: Use HTML, CSS, and JavaScript to design the web app interface, including the
+        form to input the stock, the number of simulations, and the number of years.</done></li>
+    <li><inprogress>3) Create the Oracle database: Create a new database in Oracle and configure the required tables to store the user's input
+        (number of simulations, number of years)  Use Oracle's SQL Developer to create and manage the database.</inprogress></li>
+    
+        <li>4) Collect the stock information of the stock the user chose: Use a web scraper or API to collect the stock information 
+            and store it in the Oracle database. You can use libraries like pandas and numpy to process and manipulate the data.</li>
+
+    <li>5) Build the Monte Carlo simulation: Use Python to build the Monte Carlo simulation based on the input data. You
+        can use libraries like numpy and random to generate random values and simulate the stock performance over the
+        specified period.</li>
+    <li>6) Integrate the simulation into the web app: Use Django to integrate the Monte Carlo simulation with the web
+        app. This involves defining the necessary views, models, and templates.</li>
+    <li>7) Test the web app: Test the web app to ensure that it works as expected. Use automated tests to check the
+        functionality of the web app and identify any bugs or issues.</li>
+    <li>8) Deploy the web app: Deploy the web app to GCP so that users can
+        access it.</li>
+
+
+</html>

@@ -12,6 +12,8 @@
         <a href="home">Home</a>
         <a href="about">About</a>
         <a class="active" href="calculator">Calculator</a>
+        <a href="Steps-to-Follow">Steps to Follow</a>
+
     </div>
 
 
@@ -22,5 +24,28 @@ Here is an example Monte Carlo simulation. Click on the image for more informati
 <a href="https://www.equitieslab.com/monte-carlo-simulation/">
 <img src="https://www.equitieslab.com/wp-content/uploads/2017/05/052617_1807_MonteCarloS2.png" alt="Monte Carlo Simulation">
 </a>
+
+
+<simulationForm>
+<p>Choose your simulation parameters: </p>
+
+<form>
+    <label for="num-years">For how many years would you like to run the simulation?</label><br>
+  <input type="text" id="num-years" name="params"><br>
+  <label for="num-sim">How many times would you like to run the simulation?</label><br>
+  <input type="text" id="num-sim" name="params">
+  <form>
+    <p>On which stock do you want to run the simulation?</p>
+    <input type="checkbox" id="stock1" name="params">
+    <label for="stock1">Stock1 </label>
+    <input type="checkbox" id="stock2" name="params">
+    <label for="stock2">Stock2 </label>
+  </form>
+  <br>
+  <input type="submit" value="Submit">
+  <input type="submit" value="Reset">
+</form>
+</simulationForm>
+
 </body>
 </html>  
