@@ -5,7 +5,6 @@ from datetime import date
 from prophet import Prophet
 from prophet.plot import plot_plotly
 
-
 START = "2015-01-01"
 TODAY = date.today().strftime("%Y-%m-%d")
 
