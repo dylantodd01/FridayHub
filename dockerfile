@@ -1,16 +1,11 @@
 FROM python:3.9
+ENV PYTHONUNBUFFERED 1
 
-RUN apt-get update
-RUN apt-get install -y --reinstall ca-certificates
-
-COPY ./requirements.txt /app/requirements.txt
-
-WORKDIR /app
-
-RUN pip install -r requirements.txt
-
+COPY requirements.txt ./requirements.txt 
+# RUN pip3 install -r requirements.txt 
+EXPOSE 8501
 COPY . /app
-
-ENTRYPOINT [ "python" ]
-
-CMD ["./hello.py"]
+WORKDIR /app
+HEALTHCHECK CMD curl --fall https://localhost:8501/_stcore/health 
+ENTRYPOINT [ "streamlit", "run hello.py" ]
+CMD ["hello.py"]
